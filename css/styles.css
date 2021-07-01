@@ -82,7 +82,6 @@ a {
   font-size: var(--paragraph-menu-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-left: auto;
   color: var(--grey-text-color);
 }
 .mail-link:hover,
@@ -111,6 +110,7 @@ align-items: center;
 .header-contacts-container {
 display: flex;
 align-items: center;
+margin-left: auto;
 }
 .logo {
 margin-right: 90px;
