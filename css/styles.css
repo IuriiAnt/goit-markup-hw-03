@@ -1,7 +1,8 @@
 h1,
 h2,
 h3,
-p {
+p,
+a {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -9,9 +10,11 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0;
+  padding-left: 0;
 }
-
+img {
+  display: block;
+}
 
 li {
   list-style-type: none; /* Убираем маркеры */
@@ -79,12 +82,43 @@ a {
   font-size: var(--paragraph-menu-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-left: auto;
   color: var(--grey-text-color);
 }
 .mail-link:hover,
 .mail-link:focus {
   color: var(--accent-color);
 }
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-container {
+display: flex;
+align-items: center;
+}
+.site-nav {
+display: flex;
+align-items: center;
+}
+.menu {
+display: flex;
+align-items: center;
+}
+.header-contacts-container {
+display: flex;
+align-items: center;
+}
+.logo {
+margin-right: 90px;
+}
+.menu-item:not(:last-child) {
+margin-right: 42px;
+}
+
 /*=====END HEADER=====*/
 /*=====HERO=====*/
 
@@ -116,8 +150,6 @@ a {
 .modal-button-go {
   font-size: var(--paragraph-font-size);
   line-height: 1.9;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--back-color);
 }
