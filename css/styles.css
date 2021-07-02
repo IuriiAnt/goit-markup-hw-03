@@ -147,20 +147,41 @@ a {
 .modal-button {
   font-size: var(--paragraph-font-size);
   line-height: 1.87;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--back-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  align-items: center;
+  text-align: center;
 }
 .modal-button-go {
   font-size: var(--paragraph-font-size);
+  align-items: center;
+  text-align: center;
   line-height: 1.9;
   letter-spacing: 0.06em;
   color: var(--back-color);
+  border-radius: 4px;
+}
+.modal-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: var(--paragraph-font-size);
+  line-height: 1.63;
+  /* identical to box height, or 162% */
+  letter-spacing: 0.03em;
+  color: var(--back-text-color);
+  cursor: pointer;
+}
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--accent-color);
+  color: var(--back-color);
+  cursor: pointer;
 }
 .hero-background {
   background-color: var(--black-background-color);
@@ -176,6 +197,7 @@ a {
 
   color: var(--back-text-color);
 }
+
 .description {
   font-family: var(--font-family);
   font-size: var(--paragraph-menu-font-size);
@@ -197,6 +219,9 @@ a {
 
   color: var(--back-text-color);
 }
+.what-we-do-list {
+  display: flex;
+}
 /*=========== END WHAT WE DO==========*/
 /*=========== OUR TEAM==========*/
 .our-team-back-col {
@@ -208,8 +233,21 @@ a {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--back-text-color);
+}
+.team-title {
+  margin-bottom: 52px;
+}
+.teamates-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.teamates-list-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .names-team {
   font-family: var(--font-family);
@@ -231,6 +269,10 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--grey-text-color);
+}
+.section {
+  padding-top: 186px;
+  padding-bottom: 94px;
 }
 /*===========END OUR TEAM==========*/
 /*===========FOOTER==========*/
@@ -256,27 +298,7 @@ a {
 .portfolio-hidden {
   color: var(--back-color);
 }
-.nav-button {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: var(--paragraph-font-size);
-  line-height: 1.63;
-  /* identical to box height, or 162% */
 
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--back-text-color);
-  cursor: pointer;
-}
-.nav-button:hover {
-  background-color: var(--accent-color);
-  color: var(--back-color);
-}
-.nav-button:focus {
-  background-color: var(--accent-color);
-  color: var(--back-color);
-}
 .project-name {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
