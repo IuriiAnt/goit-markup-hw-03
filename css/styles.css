@@ -211,6 +211,8 @@ a {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 .about-flex-container {
   display: flex;
@@ -230,8 +232,22 @@ a {
 
   color: var(--back-text-color);
 }
-.what-we-do-list {
+.container-wwd {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.flex-container-wwd {
   display: flex;
+}
+.container-wwd-img:not(:last-child) {
+  width: 370px;
+  height: 294px;
+  margin-right: 15px;
 }
 /*=========== END WHAT WE DO==========*/
 /*=========== OUR TEAM==========*/
@@ -359,7 +375,7 @@ a {
   color: var(--back-color);
   background-color: var(--accent-color);
 }
-.porfolio-nav-item {
+.porfolio-nav-item:not(:last-child) {
   margin-right: 8px;
 }
 /*=== END BUTTONS NAV===*/
