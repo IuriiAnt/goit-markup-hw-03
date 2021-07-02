@@ -170,12 +170,9 @@ a {
 .modal-button {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: var(--paragraph-font-size);
   line-height: 1.63;
   /* identical to box height, or 162% */
   letter-spacing: 0.03em;
-  color: var(--back-text-color);
-  cursor: pointer;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -207,6 +204,20 @@ a {
   letter-spacing: 0.03em;
 
   color: var(--grey-text-color);
+}
+.about-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.about-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-flex-element {
+  width: 270px;
 }
 /*===========END ABOUT==========*/
 /*===========WHAT WE DO==========*/
@@ -320,4 +331,27 @@ a {
   letter-spacing: 0.03em;
 
   color: var(--grey-text-color);
+}
+/*=========PORTFOLIO SECTION=====*/
+.portfolio-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-flex-element {
+  width: 380px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
