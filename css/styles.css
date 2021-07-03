@@ -2,6 +2,7 @@
 :root {
   --accent-color: #2196f3;
   --back-color: #ffffff;
+  --border-line: #ececec;
   --back-text-color: #212121;
   --grey-text-color: #757575;
   --black-background-color: #2f303a;
@@ -112,11 +113,17 @@ a {
 .mail-link:focus {
   color: var(--accent-color);
 }
+.header {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  background-color: var(--back-color);
+  border-bottom: 1px solid var(--border-line);
+}
 .header-container {
   display: flex;
   align-items: center;
 }
-.site-nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
@@ -135,10 +142,6 @@ a {
 }
 .menu-item:not(:last-child) {
   margin-right: 42px;
-}
-.header {
-  padding-top: 26px;
-  padding-bottom: 26px;
 }
 
 /*=====END HEADER=====*/
@@ -309,35 +312,24 @@ a {
 /*===========FOOTER==========*/
 .address {
   font-family: var(--font-family);
-  font-style: normal;
+  font-style: inherit;
   font-size: var(--paragraph-menu-font-size);
   line-height: 1.71;
   /* or 171% */
-
   letter-spacing: 0.03em;
-
   color: var(--back-color);
 }
 .footer {
   background: var(--black-background-color);
-  height: 250px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-white {
   color: var(--back-color);
 }
-.footer-container {
-  width: 1230px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background: var(--black-background-color);
-}
 
 /*=========END FOOTER==========*/
+/*===END WebStudio PAGE===*/
 /*=========PORTFOLIO PAGE=====*/
 .portfolio-hidden {
   color: var(--back-color);
@@ -377,6 +369,8 @@ a {
   margin-right: auto;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 90px;
 }
 .nav-button {
   font-family: var(--font-family);
