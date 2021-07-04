@@ -10,6 +10,9 @@
   --paragraph-font-size: 16px;
   --paragraph-menu-font-size: 14px;
   --shadow-hero-button: rgba(0, 0, 0, 0.15);
+  --shadow-left: rgba(0, 0, 0, 0.12);
+  --shadow-right: rgba(0, 0, 0, 0.14);
+  --shadow-bottom: rgba(0, 0, 0, 0.2);
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -84,7 +87,9 @@ a {
 .menu-link:focus {
   color: var(--accent-color);
 }
-
+.menu-link.active-link {
+  color: var(--accent-color);
+}
 .tel-link {
   font-family: var(--font-family);
   font-weight: 500;
@@ -197,6 +202,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 10px;
 
   color: var(--back-text-color);
 }
@@ -270,8 +276,6 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--back-text-color);
-}
-.team-title {
   margin-bottom: 52px;
 }
 
@@ -285,12 +289,21 @@ a {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
+  box-shadow: 0px 1px 3px var(--shadow-left), 0px 1px 1px var(--shadow-right),
+    0px 2px 1px var(--shadow-bottom);
+  border-radius: 0px 0px 4px 4px;
+}
+.teamate-description {
+  background-color: var(--back-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .names-team {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: var(--paragraph-font-size);
   line-height: 1.18;
+  padding-bottom: 10px;
   /* identical to box height */
 
   text-align: center;
@@ -311,8 +324,10 @@ a {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /*===========END OUR TEAM==========*/
 /*===========FOOTER==========*/
+
 .address {
   font-family: var(--font-family);
   font-style: normal;
@@ -321,6 +336,13 @@ a {
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--back-color);
+}
+.address-footer {
+  padding-bottom: 9px;
+}
+.mail-link-footer {
+  padding: 9px;
+  font-style: normal;
 }
 .footer {
   background: var(--black-background-color);
