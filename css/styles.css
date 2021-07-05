@@ -158,8 +158,7 @@ a {
   padding-bottom: 200px;
 }
 .background {
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
